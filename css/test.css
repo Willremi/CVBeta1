@@ -1,0 +1,226 @@
+/*corp de la page*/
+
+body {
+  font: 14px/24px Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #a3a8ad url(../img/background-1.png) 0 0 repeat-x;
+  background-attachment: fixed;
+}
+
+/*import des fonts*/
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('font/LibreBaskerville-Bold.otf');
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url('font/Cambo-Regular.otf');
+}
+
+/*Div principal*/
+
+#main {
+  width: 850px;
+  height: auto;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -1px 0 3px 1px rgba(0, 0, 0, .7);
+}
+
+/*contenu du haut*/
+
+#top_content {
+  width: 850px;
+  height: 400px;
+}
+
+/*La photo*/
+
+#picture img {
+  float: left;
+  width: 168px;
+  height: 180px;
+  margin-top: 25px;
+  margin-left: 30px;
+  box-shadow: 0 3px 2px 2px rgba(0, 0, 0, .2);
+}
+
+/*titre du haut*/
+
+#title_top {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 40px;
+  color: rgb(16, 97, 128);
+}
+
+/*résumé du haut*/
+
+#resume_top {
+  float: right;
+  width: 600px;
+  height: 240px;
+  margin-right: 30px;
+}
+#resume_top h2 {
+  color: rgb(16, 97, 128);
+}
+#description_top {
+  font-size: 20px;
+  font-family: mySecondFont;
+  margin-right: 10px;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+/*infomation */
+
+.info {
+  font-size: 16px;
+  font-family: mySecondFont;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.info a {
+  text-decoration: none;
+  color: #333;
+}
+.info img {
+  width: 32px;
+  height: 32px;
+}
+.big_title {
+  font-family: myFirstFont;
+  margin-left: 40px;
+}
+
+/*Bouton css du menu*/
+
+.texte, .texte2, .texte3 {
+  display: none;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.texte:hover, .texte2:hover, .texte3:hover {
+  color: #000;
+}
+.bouton {
+  margin-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 1.4em;
+  width: 200px;
+  height: 43px;
+  padding: 7px;
+  /*permet le centrage vertical*/
+  font-family: myFirstFont;
+  text-align: center;
+  color: white;
+  background: rgb(16, 97, 128);
+  background: linear-gradient(rgb(9, 75, 99), rgb(16, 97, 128));
+  border-radius: 8px;
+  text-shadow: 0px 1px 0px white;
+  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+}
+.bouton:hover {
+  color: white;
+  background: #555;
+  background: linear-gradient( #777, #333);
+}
+.bouton:active {
+  color: white;
+  background: #444;
+  background: linear-gradient( #555, #2C2C2C);
+  box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+/*séparateur*/
+
+.border {
+  height: 2px;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 32px;
+  margin-left: 30px;
+  padding-top: 0;
+  background: transparent url('./img/separator.png') repeat-x scroll 0 0;
+}
+
+/*contenu du milieu*/
+
+#middle_content {
+  height: auto;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+#middle_content .list > li {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 1px dashed #afafaf;
+  border-right: 1px dashed #afafaf;
+}
+
+/*box_exp*/
+
+.box_exp {
+  font-family: none;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  display: inline;
+  clear: right;
+  width: 150px;
+  margin-left: 10px;
+  padding: 3px 10px 3px 10px;
+  text-align: center;
+  color: #fff;
+  background: #2f597f;
+}
+
+/*Titre des encadrés main*/
+
+.title {
+  font-family: myFirstFont;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(16, 97, 128);
+}
+.description {
+  font-family: mySecondFont;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+/*Met les couleurs dans les encadrés de main*/
+
+.cadre {
+  background: rgb(230, 230, 230) none repeat scroll 0 0;
+  border: 1px dashed #afafaf;
+}
+#bottom_content {
+  padding-bottom: 15px;
+}
+
+/*bouton sociaux*/
+
+.icon_contact {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.icon_contact:hover {
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, .5);
+}
+.icon_contact:active {
+  box-shadow: 0 2px 2px 1px rgba(23, 108, 150, .5);
+}
