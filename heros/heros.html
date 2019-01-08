@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS third edition: rpg exercice</title>
+</head>
+<body>
+
+<div class="container">
+  <section class="create">
+    <input class="create__name" type="text" placeholder="Name">
+
+    <select class="create__class_name">
+      <option value="druid">druid</option>
+      <option value="hunter">hunter</option>
+      <option value="mage">mage</option>
+      <option value="paladin">paladin</option>
+      <option value="priest">priest</option>
+      <option value="rogue">rogue</option>
+      <option value="shaman">shaman</option>
+      <option value="warlock">warlock</option>
+      <option value="warrior">warrior</option>
+    </select>
+
+    <button class="create__btn" type="button">Create a hero</button>
+  </section>
+
+  <section class="heroes">
+    <h1 class="heroes__title" style="display:none">Available heroes</h1>
+    <table class="heroes__table" style="display:none">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>HP</th>
+          <th>Power</th>
+          <th>Luck</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </section>
+
+  <section class="select_heroes" style="display:none">
+    <select name="" id="" class="select_heroes__one">
+    </select>
+    <select name="" id="" class="select_heroes__two">
+    </select>
+    <button class="select_heroes__fight" type="button" onclick="heroes_fight()">Fight !</button>
+  </section>
+</div>
+
+<script src="js/heros.js"></script>
+</body>
+</html>
